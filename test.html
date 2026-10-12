@@ -9,7 +9,60 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play зерно.</tw-noscript></noscript></tw-story>
-<tw-storydata name="зерно" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="2A010650-99B0-45A4-885A-E70E88E16C2C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Параграф без названия" tags="" position="900,100" size="100,100">:: Начало
+<tw-storydata name="зерно" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="2A010650-99B0-45A4-885A-E70E88E16C2C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+background-image: url("https://github.com/Arhontas228/Novella/blob/main/308a1441-78ff-456c-8b19-8a847fae137d.jpeg?raw=true");
+background-size: cover; /* Фон растянут на весь экран */
+}
+/* Стиль для подложки под текст, чтобы он читался */
+.dialog-box {background-color: rgba(20, 20, 30, 0.85);
+padding: 20px 25px;
+border-radius: 12px;
+margin: 20px 0;
+color: #eee;
+line-height: 1.6;
+font-size: 1.1em;
+box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+/* Контейнер для всей сцены — чтобы персонаж не убегал за край экрана */
+.scene-wrapper {
+position: relative;
+min-height: 500px; /* Минимальная высота, чтобы сцена не схлопывалась */
+}
+/* Стиль для персонажа — теперь зафиксирован слева поверх всего */
+.char-left {
+position: absolute;
+left: 1525px;
+bottom: 55px;
+/* Прижимает к низу сцены; можно поменять на top: 20px; */
+width: 200px;
+/* Ваш размер */
+z-index: 10;
+/* Гарантирует, что персонаж будет над подложкой */
+border-radius: 8px;
+/* Тень, чтобы персонаж визуально отделялся от фона и подложки */
+filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6));}
+}
+
+/* Сама подложка — сдвинута вправо, чтобы освободить место персонажу */
+.dialog-box {
+background-color: rgba(20, 20, 30, 0.85);
+padding: 20px 25px;
+border-radius: 12px;
+margin: 20px 0;
+margin-left: 360px;     /* Отступ справа = ширина персонажа + запас */
+  color: #eee;
+  line-height: 1.6;
+  font-size: 2.1em;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 5;           /* Под персонажем */
+}
+}  </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="начало" tags="" position="900,100" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+:: Начало
 Ты — Илья, рабочий Силоса-7. Твой мир — это серые стены, гул вентиляторов и вкус безликой синтез-пасты. С момента Великого Мора прошло сто лет. Люди забыли, как выглядит небо, а слово «природа» стало ругательством.
 
 Сегодня твоя смена в нижних ярусах. Разбирая завалы старой вентиляции, ты замечаешь странный блеск в щели между ржавыми плитами. 
@@ -19,35 +72,121 @@
 Что ты сделаешь?
 [[Спрятать его в кармане-&gt;Спрятать]]
 [[Отнести Надзирателям-&gt;Надзиратели]]
-[[Попытаться съесть-&gt;Съесть]]</tw-passagedata><tw-passagedata pid="2" name="Спрятать" tags="" position="400,300" size="100,100">Ты быстро прячешь находку в самый глубокий карман рабочей робы. Сердце колотится. Если Надзиратели узнают, что ты утаил «биоматериал», тебя отправят на переплавку в органику.
+[[Попытаться съесть-&gt;Съесть]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Спрятать" tags="" position="400,300" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+Ты быстро прячешь находку в самый глубокий карман рабочей робы. Сердце колотится. Если Надзиратели узнают, что ты утаил «биоматериал», тебя отправят на переплавку в органику.
 
 Ты возвращаешься в свою каюту. При тусклом свете лампы ты рассматриваешь Зерно. Оно кажется теплым, словно в нем спрятана искра жизни, которой так не хватает в этом мертвом мире. Вдруг в дверь тихо стучат.
 [[Открыть-&gt;Элара]]
-[[Молчать и притвориться, что тебя нет-&gt;Тихий час]]</tw-passagedata><tw-passagedata pid="3" name="Надзиратели" tags="" position="900,300" size="100,100">Ты идешь в центральный пост. Надзиратель Кронн, человек с кибернетическим глазом, берет Зерно пинцетом. Его механический глаз жужжит, сканируя находку.
+[[Молчать и притвориться, что тебя нет-&gt;Тихий час]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Надзиратели" tags="" position="900,300" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+Ты идешь в центральный пост. Надзиратель Кронн, человек с кибернетическим глазом, берет Зерно пинцетом. Его механический глаз жужжит, сканируя находку.
 — Настоящее семя пшеницы, — хрипит Кронн. — Ты совершил подвиг, рабочий. Цитадель вознаградит тебя.
 Тебе выдают дополнительный паек и переводят в верхние яруса, где свет ярче, а паста вкуснее. Но по ночам тебе снятся золотистые поля, которых ты никогда не видел. Ты выжил, но что-то внутри тебя умерло.
-[[Конец: Сытый плен-&gt;Конец 1]]</tw-passagedata><tw-passagedata pid="4" name="Съесть" tags="" position="1400,300" size="100,100">Ты кладешь Зерно в рот. Оно твердое, безвкусное, но когда ты разгрызаешь его, на языке взрывается вкус, который ты не можешь описать. Вкус солнца, ветра и свободы. 
+[[Конец: Сытый плен-&gt;Конец 1]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Съесть" tags="" position="1400,300" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+Ты кладешь Зерно в рот. Оно твердое, безвкусное, но когда ты разгрызаешь его, на языке взрывается вкус, который ты не можешь описать. Вкус солнца, ветра и свободы. 
 Но это было последнее Зерно. Ты чувствуешь тяжесть в желудке и еще большую тяжесть в душе. Ты уничтожил историю, чтобы получить минуту удовольствия.
-[[Конец: Пепел на языке-&gt;Конец 2]]</tw-passagedata><tw-passagedata pid="5" name="Элара" tags="" position="200,400" size="100,100">За дверью стоит девушка из соседнего сектора. Это Элара. Она знает, что ты что-то нашел. Ее глаза горят лихорадочным блеском.
+[[Конец: Пепел на языке-&gt;Конец 2]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Элара" tags="" position="200,400" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+За дверью стоит девушка из соседнего сектора. Это Элара. Она знает, что ты что-то нашел. Ее глаза горят лихорадочным блеском.
 — Покажи мне, — шепчет она. — Я знаю, что это. Это шанс.
 Она рассказывает тебе о Поверхности. О том, что Мор давно закончился, но Цитадель держит людей в страхе, чтобы сохранять власть. У нее есть карта старых лифтов, ведущих к Солнечному Куполу.
 [[Пойти с ней на Поверхность-&gt;Подъем]]
-[[Отказаться и пригрозить донести-&gt;Предательство]]</tw-passagedata><tw-passagedata pid="6" name="Тихий час" tags="" position="462.5,425" size="100,100">Ты молчишь. Шаги за дверью удаляются. Ты решаешь, что Зерно — это слишком опасная ноша. Ночью ты тайно выбрасываешь его в мусоропровод, где его перемелют в синтез-пасту для других. Ты живешь долго, но каждый кусок еды кажется тебе пеплом.
-[[Конец: Серая жизнь-&gt;Конец 3]]</tw-passagedata><tw-passagedata pid="7" name="Конец 1" tags="" position="900,425" size="100,100">ы живешь в комфорте Сити. Но иногда, глядя на серые стены, ты чувствуешь фантомный голод. Голод не по пасте, а по чему-то настоящему. Зерно стало едой для машины, а ты — винтиком в ней.
-[[(Начать заново)-&gt;Начало]]</tw-passagedata><tw-passagedata pid="8" name="Конец 2" tags="" position="1400,425" size="100,100">Ты уничтожил единственное Зерно. Вкус свободы длился секунду, а пустота осталась навсегда. Ты стал таким же мертвым, как и стены Силоса.
-[[(Начать заново)-&gt;Начало]]</tw-passagedata><tw-passagedata pid="9" name="Подъем" tags="" position="100,600" size="100,100">Вы с Эларой пробираетесь через заброшенные шахты. Путь долог и опасен. Вы делите последний глоток воды. Зерно лежит в маленькой стеклянной колбе, которую тебе дала Элара.
+[[Отказаться и пригрозить донести-&gt;Предательство]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Тихий час" tags="" position="462.5,425" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+Ты молчишь. Шаги за дверью удаляются. Ты решаешь, что Зерно — это слишком опасная ноша. Ночью ты тайно выбрасываешь его в мусоропровод, где его перемелют в синтез-пасту для других. Ты живешь долго, но каждый кусок еды кажется тебе пеплом.
+[[Конец: Серая жизнь-&gt;Конец 3]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Конец 1" tags="" position="900,425" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+Ты живешь в комфорте Сити. Но иногда, глядя на серые стены, ты чувствуешь фантомный голод. Голод не по пасте, а по чему-то настоящему. Зерно стало едой для машины, а ты — винтиком в ней.
+[[(Начать заново)-&gt;начало]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Конец 2" tags="" position="1400,425" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+Ты уничтожил единственное Зерно. Вкус свободы длился секунду, а пустота осталась навсегда. Ты стал таким же мертвым, как и стены Силоса.
+[[(Начать заново)-&gt;начало]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Подъем" tags="" position="100,600" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+Вы с Эларой пробираетесь через заброшенные шахты. Путь долог и опасен. Вы делите последний глоток воды. Зерно лежит в маленькой стеклянной колбе, которую тебе дала Элара.
 Наконец, вы достигаете шлюза, ведущего на Поверхность. Механизм ржавеет, но поддается. Дверь со скрежетом открывается.
 Слепящий свет. Ты падаешь на колени. Перед вами не мертвая пустыня, а мягкая, темная земля. И где-то вдалеке пробивается росток.
 Элара достает колбу. 
 — Сади, Илья. Это твоя находка.
 Ты закапываешь Зерно в теплую, живую землю. В этот момент ты понимаешь: ты не просто посадил пшеницу. Ты посадил будущее.
-[[Конец: Новый Эдем-&gt;Конец 4]]</tw-passagedata><tw-passagedata pid="10" name="Предательство" tags="" position="300,600" size="100,100">— Ты сошел с ума, Элара! Поверхности не существует! — кричишь ты и тянешься к кнопке вызова охраны.
+[[Конец: Новый Эдем-&gt;Конец 4]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Предательство" tags="" position="300,600" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+— Ты сошел с ума, Элара! Поверхности не существует! — кричишь ты и тянешься к кнопке вызова охраны.
 Элара смотрит на тебя с бесконечной грустью. Она не убегает. Она просто разжимает ладонь, и ты видишь, что у нее в руке точно такое же Зерно. Она бросает его в щель в полу и уходит в темноту.
 Охрана забирает тебя за «мыслепреступление». Но в камере ты не можешь забыть ее взгляд. Ты предал не ее. Ты предал себя.
-[[Конец: Тюрьма совести-&gt;Конец 5]]</tw-passagedata><tw-passagedata pid="11" name="Конец 3" tags="" position="587.5,550" size="100,100">Ты прожил долгую, спокойную и совершенно бессмысленную жизнь. Зерно, которое могло изменить мир, стало безликой питательной субстанцией. Как и ты сам.
-[[(Начать заново)-&gt;Начало]]</tw-passagedata><tw-passagedata pid="12" name="Начало" tags="" position="900,550" size="100,100">Конец</tw-passagedata><tw-passagedata pid="13" name="Конец 5" tags="" position="300,725" size="100,100">Ты сидишь в карцере. Ты предал надежду из-за страха. Зерно, брошенное Эларой в щель, возможно, прорастет в темноте, но ты никогда этого не увидишь. Твой страх стал твоей могилой.
-[[(Начать заново)-&gt;Начало]]</tw-passagedata><tw-passagedata pid="14" name="Конец 4" tags="" position="100,725" size="100,100">Прошли годы. Силос-7 опустел, люди вышли на свет. На месте, где ты посадил Зерно, теперь шумит золотое поле. Ветер гладит колосья, и они шелестят, словно благодарят тебя. Ты стал первым Аграрием нового мира.
-[[(Начать заново)-&gt;Начало]]</tw-passagedata></tw-storydata>
+[[Конец: Тюрьма совести-&gt;Конец 5]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Конец 3" tags="" position="587.5,550" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+Ты прожил долгую, спокойную и совершенно бессмысленную жизнь. Зерно, которое могло изменить мир, стало безликой питательной субстанцией. Как и ты сам.
+[[(Начать заново)-&gt;начало]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Конец 5" tags="" position="300,725" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+Ты сидишь в карцере. Ты предал надежду из-за страха. Зерно, брошенное Эларой в щель, возможно, прорастет в темноте, но ты никогда этого не увидишь. Твой страх стал твоей могилой.
+[[(Начать заново)-&gt;начало]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Конец 4" tags="" position="100,725" size="100,100">&lt;div class=&quot;scene-wrapper&quot;&gt;
+&lt;img src=&quot;https://github.com/Arhontas228/Novella/blob/main/imagep(2).jpeg?
+raw=true&quot; class=&quot;char-left&quot;&gt;
+
+&lt;div class=&quot;dialog-box&quot;&gt;
+Прошли годы. Силос-7 опустел, люди вышли на свет. На месте, где ты посадил Зерно, теперь шумит золотое поле. Ветер гладит колосья, и они шелестят, словно благодарят тебя. Ты стал первым Аграрием нового мира.
+[[(Начать заново)-&gt;начало]]
+ &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
